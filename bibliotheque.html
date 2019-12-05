@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotheque</title>
+    <link rel=stylesheet href="style.css" type="text/css">
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/bibliotheque.js"></script>
+    <script type="text/javascript" src="js/recherche.js"></script>
+    <script type="text/javascript" src="js/champs.js"></script>
+</head>
+<body onload="chargerBibliotheque()">
+    <br>
+
+    <div id="action">
+        <a href="ajout.html" class="bouton bouton-action">Ajouter un jeu</a>
+        <input class="bouton-action" type="button" value="Sauvegarder" onClick="sauvegardeJeu()">
+        <input class="bouton-action" type="button" value="Effacer" onClick="effaceBibliotheque()">
+        <input type="button" value="Champs Personalise" id="champs-perso" onClick="champPerso()">
+        <input class="bouton-action" type="button" value="Ma bibliothèque" id="ma-bibliotheque" onClick="chargerBibliotheque()" style="display: none">
+    </div>
+
+    <br>
+    <div id="games">
+    </div>
+
+    <div id="ma-boite-dialogue" class="dialogue">
+        <div class="contenu-dialogue">
+            <span class="fermeture">&times;</span>
+            <p id="dialogue"></p>
+        </div>
+    </div>
+
+</body>
+</html>

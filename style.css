@@ -1,0 +1,175 @@
+body{
+    background-color: rgba(233, 238, 255, 0.6);
+}
+table, tr{
+    border-collapse: collapse;
+    border: 3px solid black;
+    margin-bottom: 3px;
+}
+
+.bouton {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 4px;
+    margin-left: 3px;
+    font:bold 13px Verdana;
+    box-shadow:1px 1px 3px #aaa;
+}
+
+.bouton:hover {
+    background-color: dimgrey;
+}
+
+.spacer {
+    height: 10px;
+}
+
+#bouton1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#bouton2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+#listeBouton{
+    text-align: center;
+    display: flex;
+
+}
+
+input[type=button], input[type=submit], input[type=reset]{
+    background: black;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius:2px;
+    box-shadow:1px 1px 3px #aaa;
+    font:bold 13px Verdana;
+    height: 26px;
+}
+
+input[type=text]{
+    height: 15px;
+}
+
+input[type=image]{
+    background: black;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius:2px;
+    box-shadow:1px 1px 3px #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#boutonInfo{
+    width: 25px;
+    height: 25px;
+}
+
+
+.dialogue {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.contenu-dialogue {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.fermeture {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fermeture:hover,
+.fermeture:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dispositionRecherche{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    text-align: center;
+    overflow:hidden;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.boutonAjouterRecherche{
+    margin-top: auto;
+}
+#games{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageRecherche{
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+
+#listeBouton{
+    margin: 2px 2px;
+}
+
+#boutonHaut{
+    margin-bottom: 4px;
+}
+
+#contenu-champs{
+    margin-top: 5px;
+    display: block;
+}
+
+#action{
+    display: flex;
+    margin-right: 4px;
+    flex-wrap: wrap;
+}
+
+.bouton-action{
+    margin-right: 4px;
+}
+
+#recherche{
+    width: 700px;
+    max-width: 100%;
+}
+
+td{
+    padding-left: 15px;
+    padding-right: 15px;
+}

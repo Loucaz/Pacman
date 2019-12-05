@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotheque</title>
+    <link rel=stylesheet href="style.css" type="text/css">
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/bibliotheque.js"></script>
+    <script type="text/javascript" src="js/recherche.js"></script>
+    <script type="text/javascript" src="js/champs.js"></script>
+</head>
+<body onKeyPress="if (event.keyCode == 13) recherche()">
+    <br>
+
+    <div id="action">
+        <input type="text" id="recherche">
+        <input type="button" value="Rechercher" onClick="recherche()" class="bouton">
+        <a href="bibliotheque.html" class="bouton">Ma bibliothèque</a>
+        <input type="button" onclick="afficherCacher()" id="boutton-cacher" value="+" class="bouton">
+    </div>
+
+    <div id="formulaire" style="display: none">
+        <label for="nom-form">Nom du jeu </label>
+        <input type="text" name="nom-form" id="nom-form" required>
+        <br>
+        <label for="description-form">Description </label>
+        <input type="text" name="description-form" id="description-form" required>
+        <br>
+        <input type="file" id="files" name="files[]"/>
+        <br><br>
+        <input type="submit" value="Ajouter" onclick="ajouterJeuPersonnel()">
+    </div>
+
+    <br>
+    <div id="games">
+    </div>
+
+    <div id="ma-boite-dialogue" class="dialogue">
+        <div class="contenu-dialogue">
+            <span class="fermeture">&times;</span>
+            <p id="dialogue"></p>
+        </div>
+    </div>
+
+</body>
+</html>
